@@ -20,6 +20,8 @@ import Performer from "../_types/Performer";
 import unlikePerformer from "../_functions/unlikePerformer";
 import undislikePerformer from "../_functions/undislikePerformer";
 import clearSeenRandomPerformerIds from "../_functions/clearSeenRandomPerformerIds";
+import PerformerAppleMusicButton from "../_components/PerformerAppleMusicButton";
+import PerformerYouTubeMusicButton from "../_components/PerformerYouTubeMusicButton";
 
 interface RandomPerformerProps {
   dislikedPerformerIds?: string[];
@@ -129,15 +131,32 @@ const RandomPerformer = ({
                 {performer.type}
               </Badge>
             </VStack>
-            <PerformerSpotifyButton
-              borderColor="green.500"
-              borderRadius="full"
-              color="black"
-              colorScheme="green"
-              marginTop={12}
-              performerName={performer.name}
-              size="lg"
-            />
+            <VStack marginTop={12} spacing={4}>
+              <PerformerSpotifyButton
+                borderColor="green.500"
+                borderRadius="full"
+                color="black"
+                colorScheme="green"
+                performerName={performer.name}
+                size="lg"
+              />
+              <PerformerYouTubeMusicButton
+                borderColor="red.500"
+                borderRadius="full"
+                color="red.900"
+                colorScheme="red"
+                performerName={performer.name}
+                size="lg"
+              />
+              <PerformerAppleMusicButton
+                borderColor="pink.500"
+                borderRadius="full"
+                color="pink.900"
+                colorScheme="pink"
+                performerName={performer.name}
+                size="lg"
+              />
+            </VStack>
           </Center>
         </Container>
       </Box>

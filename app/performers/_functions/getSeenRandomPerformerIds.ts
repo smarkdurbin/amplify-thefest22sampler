@@ -14,9 +14,9 @@
  * }
  */
 const getSeenRandomPerformerIds = async () => {
-  // Retrieve data labeled "seen_random_performer_ids" from local storage
+  // Retrieve data labeled "thefest22_seen_random_performer_ids" from local storage
   const seenRandomPerformersJSON = localStorage.getItem(
-    "seen_random_performer_ids"
+    "thefest22_seen_random_performer_ids"
   );
 
   // Parse the JSON data into an array of strings, or return an empty array if data is not present

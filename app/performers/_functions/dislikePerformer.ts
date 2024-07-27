@@ -17,9 +17,9 @@
  */
 const dislikePerformer = async (performerId: string) => {
   try {
-    // Retrieve existing data labeled "disliked_performer_ids" from local storage
+    // Retrieve existing data labeled "thefest22_disliked_performer_ids" from local storage
     const existingDislikedPerformerIdsJSON = localStorage.getItem(
-      "disliked_performer_ids"
+      "thefest22_disliked_performer_ids"
     );
 
     // Parse existing data into an array or initialize an empty array if data is not present
@@ -34,7 +34,7 @@ const dislikePerformer = async (performerId: string) => {
 
       // Store the updated data back in local storage
       localStorage.setItem(
-        "disliked_performer_ids",
+        "thefest22_disliked_performer_ids",
         JSON.stringify(existingDislikedPerformerIds)
       );
     }

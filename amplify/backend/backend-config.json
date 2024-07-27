@@ -1,1 +1,98 @@
-{}
+{
+  "api": {
+    "thefest22samplerApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "thefest22samplerReadPerformers"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "thefest22samplerb6bc49b9": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "custom": {
+    "thefest22samplerPerformersStorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "customCloudformation"
+    }
+  },
+  "function": {
+    "thefest22samplerFetchPerformers": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "thefest22samplerReadPerformers": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_thefest22samplerFetchPerformers_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thefest22samplerFetchPerformers"
+        }
+      ]
+    },
+    "AMPLIFY_function_thefest22samplerFetchPerformers_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thefest22samplerFetchPerformers"
+        }
+      ]
+    },
+    "AMPLIFY_function_thefest22samplerReadPerformers_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thefest22samplerReadPerformers"
+        }
+      ]
+    },
+    "AMPLIFY_function_thefest22samplerReadPerformers_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "thefest22samplerReadPerformers"
+        }
+      ]
+    }
+  }
+}

@@ -5,9 +5,9 @@ const addSeenRandomPerformerId = async (
   performerId: string
 ): Promise<{ success: boolean }> => {
   try {
-    // Retrieve existing data labeled "seen_random_performer_ids" from local storage
+    // Retrieve existing data labeled "thefest22_seen_random_performer_ids" from local storage
     const existingSeenRandomPerformerIdsJSON = localStorage.getItem(
-      "seen_random_performer_ids"
+      "thefest22_seen_random_performer_ids"
     );
 
     // Parse existing data into an array or initialize an empty array if data is not present
@@ -22,7 +22,7 @@ const addSeenRandomPerformerId = async (
 
     // Store the updated data back in local storage
     localStorage.setItem(
-      "seen_random_performer_ids",
+      "thefest22_seen_random_performer_ids",
       JSON.stringify(existingSeenRandomPerformerIds)
     );
 

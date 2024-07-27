@@ -14,8 +14,8 @@
  * }
  */
 const getLikedPerformerIds = async () => {
-  // Retrieve data labeled "liked_performer_ids" from local storage
-  const likedPerformersJSON = localStorage.getItem("liked_performer_ids");
+  // Retrieve data labeled "thefest22_liked_performer_ids" from local storage
+  const likedPerformersJSON = localStorage.getItem("thefest22_liked_performer_ids");
 
   // Parse the JSON data into an array of strings, or return an empty array if data is not present
   const likedPerformers = likedPerformersJSON
