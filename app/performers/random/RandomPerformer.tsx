@@ -148,14 +148,14 @@ const RandomPerformer = ({
                 performerName={performer.name}
                 size="lg"
               />
-              <PerformerAppleMusicButton
+{/*               <PerformerAppleMusicButton
                 borderColor="pink.500"
                 borderRadius="full"
                 color="pink.900"
                 colorScheme="pink"
                 performerName={performer.name}
                 size="lg"
-              />
+              /> */}
             </VStack>
           </Center>
         </Container>
