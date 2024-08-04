@@ -6,6 +6,7 @@ import PerformerSpotifyButton from "./PerformerSpotifyButton";
 import { useState } from "react";
 import undislikePerformer from "../_functions/undislikePerformer";
 import unlikePerformer from "../_functions/unlikePerformer";
+import PerformerYouTubeMusicButton from "./PerformerYouTubeMusicButton";
 
 interface PerformerListItemProps {
   dislikedPerformerIds: string[];
@@ -123,6 +124,13 @@ const PerformerListItem = ({
           />
           <PerformerSpotifyButton
             color="green.400"
+            fontSize="x-large"
+            iconOnly={true}
+            performerName={performer.name}
+            variant="ghost"
+          />
+          <PerformerYouTubeMusicButton
+            color="red.400"
             fontSize="x-large"
             iconOnly={true}
             performerName={performer.name}

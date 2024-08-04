@@ -86,6 +86,7 @@ const PerformerDislikeButton = ({
       }
       isRound={true}
       onClick={handleClick}
+      size="sm"
       {...rest}
     />
   ) : (

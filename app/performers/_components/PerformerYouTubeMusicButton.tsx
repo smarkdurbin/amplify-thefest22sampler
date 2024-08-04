@@ -29,6 +29,7 @@ const PerformerYouTubeMusicButton = ({
       href={`https://music.youtube.com/search?q=${performerName}`}
       icon={<Icon as={SiYoutubemusic} color={color ? color : "red.500"} />}
       isRound={true}
+      size="sm"
       {...rest}
     />
   ) : (

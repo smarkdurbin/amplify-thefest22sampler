@@ -29,6 +29,7 @@ const PerformerSpotifyButton = ({
       href={`spotify://search/${performerName}`}
       icon={<Icon as={FaSpotify} color={color ? color : "green.500"} />}
       isRound={true}
+      size="sm"
       {...rest}
     />
   ) : (

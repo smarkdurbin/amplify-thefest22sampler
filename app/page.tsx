@@ -17,7 +17,7 @@ export default function Home() {
   // Define instructions
   const instructions = [
     `Browse performers, or load a random performer`,
-    `Touch the Spotify button to search for that performer in your Spotify app`,
+    `Touch the Spotify/YT Music button to search for that performer in your Spotify app`,
     `Hit the like button to keep track of performers you want to see`,
     `Add liked performers to your schedule in The Fest 22 app`,
   ];
