@@ -76,7 +76,7 @@ export default function Home() {
             ))}
           </List>
           <Text fontSize="sm" textAlign="center" marginTop={4}>
-            {`This app doesn't collect or store personal information. Your likes and the record of random performers you have seen is stored browser storage, which you can clear at any time.`}
+            {`This app doesn't collect or store personal information. Your likes and the record of random performers you have seen is stored in your browser storage, which you can clear at any time.`}
           </Text>
         </Container>
       </ScrollingContainer>
